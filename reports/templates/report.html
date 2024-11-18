@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Report Preview</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div id="report-content">
+        <h1>Report Title</h1>
+        <p>This is an example report generated in Django.</p>
+        <p>{{ report_content }}</p>
+    </div>
+    <button onclick="window.print()">Print</button>
+</body>
+</html>
